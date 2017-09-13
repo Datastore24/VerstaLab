@@ -16,6 +16,8 @@ let fackultetStudent = "Programming for SWIFT"
 
 var age = "23"
 
+var ageTwo = 23
+
 let newAge = Int(age)! + 1
 
 print("Hello \(nameStudent)")
@@ -23,8 +25,9 @@ print("Hello, \(nameStudent) \(secondNameStudent) \(familiaStudent)! \n My age i
 print(fackultetStudent)
 print("HappyBirthday OLDAge: \(vozrastStudent) AND NEW AGE: \(newAge) years")
 
+var newAgeTwo = Int(age)! + ageTwo + newAge
 
-
+print("Sklali Troih i Poluchili \(newAgeTwo)")
 
 
 
