@@ -48,3 +48,12 @@ print("Сумма трех констант в выражении Double = \(sum
 
 print("Сумма трех констант в выражении Float = \(summaFloat)")
 
+
+
+let boolsZone = true
+
+if boolsZone {
+    print("Я и есть ПРАВДА!")
+} else {
+    print("Тута нету нихрена...")
+}
