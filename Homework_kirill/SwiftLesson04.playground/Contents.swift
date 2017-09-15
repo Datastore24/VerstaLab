@@ -129,18 +129,18 @@ print("Sum = \(sum)");
 
 //Задание 2
 
-let serverRespone : (statusCode : Int?, message : String?, errorMessage : String?) = (200, "OK",  nil)
+let serverResponse : (statusCode : Int?, message : String?, errorMessage : String?) = (200, "OK",  nil)
 
-if serverRespone.statusCode != nil {
-    if (serverRespone.statusCode! > 199) && (serverRespone.statusCode! < 300) {
-        if serverRespone.message != nil {
-            print("Server message: \(serverRespone.message!)")
+if serverResponse.statusCode != nil {
+    if (serverResponse.statusCode! > 199) && (serverResponse.statusCode! < 300) {
+        if serverResponse.message != nil {
+            print("Server message: \(serverResponse.message!)")
         } else {
             print("Fatal Error")
         }
     } else {
-        if serverRespone.errorMessage != nil {
-            print("ERROR: \(serverRespone.errorMessage!)")
+        if serverResponse.errorMessage != nil {
+            print("ERROR: \(serverResponse.errorMessage!)")
         }else{
             print("Fatal Error Message")
         }
@@ -152,11 +152,11 @@ if serverRespone.statusCode != nil {
 
 
 //Без  StatusCode
-let serverResponeTwo : (message : String?, errorMessage : String?) = (nil,  nil)
+let serverResponseTwo : (message : String?, errorMessage : String?) = (nil,  nil)
 
-if let serverMessage = serverResponeTwo.message {
+if let serverMessage = serverResponseTwo.message {
     print("Server Message: \(serverMessage)")
-} else if let serverError = serverResponeTwo.errorMessage {
+} else if let serverError = serverResponseTwo.errorMessage {
     print("Server Error: \(serverError)")
 }else{
     print("Server is OffLine")
