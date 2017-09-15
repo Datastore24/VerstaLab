@@ -179,6 +179,8 @@ if (serverResponse1.message != nil) && (serverResponse1.errorMessage != nil) {
 }
 
 
+print()
+
 
 //Zad 3.
 
@@ -187,6 +189,20 @@ var studentTwo:   (name: String?, numberAuto: String?, resultOfTheControl: Int?)
 var studentThree: (name: String?, numberAuto: String?, resultOfTheControl: Int?)
 var studentFour:  (name: String?, numberAuto: String?, resultOfTheControl: Int?)
 var studentFive:  (name: String?, numberAuto: String?, resultOfTheControl: Int?)
+
+//var studentSix:  (name: String, numberAuto: String?, resultOfTheControl: Int?) = ("", nil, nil)
+//
+//studentSix.name = "Kirill"
+//if let num = studentSix.numberAuto {
+//    print(num)
+//}
+//studentSix.resultOfTheControl = 10
+
+/* var aStr = String()
+
+aStr += "Hello"
+aStr
+*/
 
 
 /*studentOne = ("Alex", nil, 5)
@@ -210,7 +226,7 @@ studentFive.name = "Vladimir Putin"
 studentFive.numberAuto = "E001KX"
 studentFive.resultOfTheControl = 10
 
-print()
+
 
 
 // Первый студень
