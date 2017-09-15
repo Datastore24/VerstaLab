@@ -35,18 +35,18 @@ let ferstB = 32.16
 let ferstC :Float = 64.32
 
 
-let summaInt = ferstA + Int(ferstB) + Int(ferstC)
+let amountInt = ferstA + Int(ferstB) + Int(ferstC)
 
-let summaDouble = Double(ferstA) + ferstB + Double(ferstC)
+let amountDouble = Double(ferstA) + ferstB + Double(ferstC)
 
-let summaFloat = Float(ferstA) + Float(ferstB) + ferstC
+let amountFloat = Float(ferstA) + Float(ferstB) + ferstC
 
 
-print("Сумма трех костант в выражении Int = \(summaInt)")
+print("Сумма трех костант в выражении Int = \(amountInt)")
 
-print("Сумма трех констант в выражении Double = \(summaDouble)")
+print("Сумма трех констант в выражении Double = \(amountDouble)")
 
-print("Сумма трех констант в выражении Float = \(summaFloat)")
+print("Сумма трех констант в выражении Float = \(amountFloat)")
 
 
 
