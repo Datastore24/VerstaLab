@@ -190,13 +190,21 @@ if cell.x == nil || cell.y == nil {
 }
 
 
+
+
+let (A,B,C,D,E,F,G,H) = (1, 2, 3, 4, 5, 6, 7, 8)
+
+let dict = ["A" : 1, "B" : 2]
+
+dict["A"]
+
+let coordinateSystemY = (1, 2, 3, 4, 5, 6, 7, 8)
+
 var runValue: (k: Int?, m: Int?)
 
-runValue.k = 2
-runValue.m = 7
+runValue.k = E
+runValue.m = 2
 
-let coordinateSystemX = (a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, h: 8)
-let coordinateSystemY = (1, 2, 3, 4, 5, 6, 7, 8)
 
 if runValue.k == nil || runValue.m == nil {
     print("Отсутствует необходимый параметр")
@@ -204,13 +212,19 @@ if runValue.k == nil || runValue.m == nil {
     print("Параметры введены не верно")
     if runValue.k! < 1 {
         print("K не может быть меньше 1")
-    }else if runValue.k! > 8 {
+    } else if runValue.k! > 8 {
         print("K не может быть больше 8")
     }
     if runValue.m! < 1 {
         print("M не может быть меньше 1")
-    }else if runValue.m > 8 {
+    } else if runValue.m! > 8 {
         print("M не может быть больше 8")
     }
-}
+} else {
+    if runValue.k! % 2 == runValue.m! % 2 {
+        print("BLACK")
+    } else {
+        print("WHITE")
+    }
 
+}
