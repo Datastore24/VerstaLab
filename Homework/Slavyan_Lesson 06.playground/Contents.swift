@@ -160,13 +160,24 @@ let symbol : Character = "n"
 
 let char = abc.characters
 
-var index = 0
+//var index = 0
+
+let indexChar = char.index(of: "n")
+let indexOfElementChar = char.distance(from: char.startIndex, to: indexChar!)
+print("index of char n is \(indexOfElementChar)")
 
 for value in char {
     
-    //print("index of \(value) is \(index)")
+    let index = char.index(of: value)
+    let indexOfElement = char.distance(from: char.startIndex, to: index!)
+    
+    //print("index of \(value) is \(indexOfElement)")
     if value == symbol {
-        print("index of \(symbol) is \(index)")
+        print("index of \(symbol) is \(indexOfElement)")
     }
-    index += 1
+//    index += 1
 }
+
+
+
+
